@@ -71,7 +71,7 @@ A demo website using the `react-vnc` library is hosted on [https://roerohan.gith
 To install the library, you can run the following command:
 
 ```bash
-npm i react-vnc
+npm i allyson-react-vnc
 ```
 
 ### Contribution
