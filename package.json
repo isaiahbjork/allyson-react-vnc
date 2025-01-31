@@ -1,8 +1,8 @@
 {
-  "name": "react-vnc",
+  "name": "allyson-react-vnc",
   "version": "2.0.2",
   "description": "A React Component to connect to a websockified VNC client using noVNC.",
-  "author": "roerohan",
+  "author": "Allyson, Inc.",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -36,7 +36,6 @@
     "url": "https://github.com/roerohan/react-vnc/issues"
   },
   "dependencies": {
-    "@rollup/plugin-typescript": "^11.1.6",
     "@testing-library/jest-dom": "^6.4.5",
     "@testing-library/react": "^16.0.0",
     "@testing-library/user-event": "^14.5.2",
