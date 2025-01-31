@@ -1,16 +1,14 @@
-import resolve from '@rollup/plugin-node-resolve';
-import commonjs from '@rollup/plugin-commonjs';
-import babel from '@rollup/plugin-babel';
+import pkg from "./package.json" with { type: "json" };
+import typescript from "@rollup/plugin-typescript";
 
-export default {
-  input: 'src/index.js', // Path to your entry file
-  output: {
-    file: 'dist/bundle.js', // Output file
-    format: 'cjs', // CommonJS format
-  },
-  plugins: [
-    resolve(),
-    commonjs(),
-    babel({ babelHelpers: 'bundled' }),
-  ],
+const config = {
+    input: pkg.source,
+    output: [
+        { file: pkg.main, format: "cjs" },
+        { file: pkg.module, format: "es" },
+    ],
+    plugins: [typescript()],
+    external: Object.keys(pkg.peerDependencies ?? {}),
 };
+
+export default config;
