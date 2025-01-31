@@ -1,6 +1,6 @@
 {
   "name": "allyson-react-vnc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React Component to connect to a websockified VNC client using noVNC. ",
   "author": "Allyson, Inc.",
   "license": "MIT",
