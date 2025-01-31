@@ -109,7 +109,7 @@ A `VncScreen` component is exposed from the library, to which you can pass the r
 
 ```ts
 import React, { useRef } from 'react';
-import { VncScreen } from 'react-vnc';
+import { VncScreen } from 'allyson-react-vnc';
 
 function App() {
   const ref = useRef();
